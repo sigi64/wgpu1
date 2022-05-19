@@ -20,7 +20,7 @@ log = "0.4"
 wgpu = "0.12"
 # Replace with tokio if needed by Rayon
 pollster = "0.2"
-
+bytemuck = { version = "1.9.1", features = ["derive"]}
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 console_error_panic_hook = "0.1.6"
