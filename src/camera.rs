@@ -115,6 +115,7 @@ impl Camera {
         }
     }
 
+    /// Aply camera and scene view matrics
     pub fn build_view_projection_matrix(&self) -> cgmath::Matrix4<f32> {
         // The view matrix moves the world to be at the position and rotation of the camera.
         // It's essentially an inverse of whatever the transform matrix of the camera would be.
